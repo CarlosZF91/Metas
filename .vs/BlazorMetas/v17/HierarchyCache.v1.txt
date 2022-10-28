@@ -1,0 +1,264 @@
+﻿++Solución "BlazorMetas" ‎(3 de 3 proyectos)
+i:{00000000-0000-0000-0000-000000000000}:BlazorMetas.sln
+++BlazorMetas.Server
+i:{00000000-0000-0000-0000-000000000000}:BlazorMetas.Server
+++Connected Services 
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:>2649
+i:{50467877-7952-476b-be4f-65266559be2a}:>2648
+++Dependencias
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:>2647
+i:{87fd2be9-048f-42a6-b510-923289582463}:>1504
+i:{50467877-7952-476b-be4f-65266559be2a}:>2646
+++Properties
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\properties\
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\properties\
+++Controllers
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\controllers\
+++MetaController.cs
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\controllers\metacontroller.cs
+++WeatherForecastController.cs
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\controllers\weatherforecastcontroller.cs
+++Pages
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\pages\
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\pages\
+++appsettings.json
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\appsettings.json
+++appsettings.Development.json
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\appsettings.development.json
+++Program.cs
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\program.cs
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\program.cs
+++No se detectaron dependencias de servicio
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:>2650
+i:{50467877-7952-476b-be4f-65266559be2a}:>2651
+++Analizadores
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:analizadores
+i:{87fd2be9-048f-42a6-b510-923289582463}:analizadores
+i:{50467877-7952-476b-be4f-65266559be2a}:analizadores
+++Marcos de trabajo
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:marcos de trabajo
+i:{87fd2be9-048f-42a6-b510-923289582463}:marcos de trabajo
+i:{50467877-7952-476b-be4f-65266559be2a}:marcos de trabajo
+++Paquetes
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:paquetes
+i:{87fd2be9-048f-42a6-b510-923289582463}:paquetes
+i:{50467877-7952-476b-be4f-65266559be2a}:paquetes
+++Proyectos
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:proyectos
+i:{50467877-7952-476b-be4f-65266559be2a}:proyectos
+++launchSettings.json
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\properties\launchsettings.json
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\properties\launchsettings.json
+++Error.cshtml
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\pages\error.cshtml
+++Microsoft.AspNetCore.Analyzers
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\.nuget\packages\microsoft.aspnetcore.components.analyzers\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.1\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\microsoft.netcore.app
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\microsoft.netcore.app
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\microsoft.netcore.app
+++Autofac (6.4.0)
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:>2721
+++Mapster (7.3.0)
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:>2719
+++Microsoft.AspNetCore.Components.WebAssembly.Server (6.0.5)
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:>2720
+++Microsoft.EntityFrameworkCore.Design (6.0.10)
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:>2718
+++BlazorMetas.Client
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\bin\debug\net6.0\blazormetas.client.dll
+i:{00000000-0000-0000-0000-000000000000}:BlazorMetas.Client
+++BlazorMetas.Shared
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\bin\debug\net6.0\blazormetas.shared.dll
+i:{00000000-0000-0000-0000-000000000000}:BlazorMetas.Shared
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\bin\debug\net6.0\blazormetas.shared.dll
+++Error.cshtml.cs
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\pages\error.cshtml.cs
+++BD
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\bd\
+++baseMetas.mdf
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\bd\basemetas.mdf
+++baseMetas_log.ldf
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\bd\basemetas_log.ldf
+++DA
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\da\
+++MetasDA.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\da\metasda.cs
+++DTO
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\dto\
+++MetaDTO.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\dto\metadto.cs
+++RespuestaDTO.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\dto\respuestadto.cs
+++IDA
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\ida\
+++IMetasDAL.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\ida\imetasdal.cs
+++Migrations
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\migrations\
+++Persistenacia
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\persistenacia\
+++tblActividad.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\persistenacia\tblactividad.cs
+++tblMetas.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\persistenacia\tblmetas.cs
+++ApplicationDbContext.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\applicationdbcontext.cs
+++WeatherForecast.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\weatherforecast.cs
+++20221027032401_primera.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\migrations\20221027032401_primera.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\migrations\applicationdbcontextmodelsnapshot.cs
+++Microsoft.EntityFrameworkCore (6.0.10)
+i:{87fd2be9-048f-42a6-b510-923289582463}:>2690
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.10)
+i:{87fd2be9-048f-42a6-b510-923289582463}:>2692
+++Microsoft.EntityFrameworkCore.Tools (6.0.10)
+i:{87fd2be9-048f-42a6-b510-923289582463}:>2694
+++20221027032401_primera.Designer.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\migrations\20221027032401_primera.designer.cs
+++wwwroot
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\
+++Counter.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\pages\counter.razor
+++FetchData.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\pages\fetchdata.razor
+++Index.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\pages\index.razor
+++Shared
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\
+++Metas
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\metas\
+++FomularioCrearMeta.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\metas\fomulariocrearmeta.razor
+++Formulario.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\metas\formulario.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\actividades\formulario.razor
+++LstMetas.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\metas\lstmetas.razor
+++MainLayout.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\mainlayout.razor
+++NavMenu.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\navmenu.razor
+++SurveyPrompt.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\surveyprompt.razor
+++_Imports.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\_imports.razor
+++App.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\app.razor
+++css
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\css\
+++favicon.ico
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\favicon.ico
+++icon-192.png
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\icon-192.png
+++index.html
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\index.html
+++MainLayout.razor.css
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\mainlayout.razor.css
+++NavMenu.razor.css
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\navmenu.razor.css
+++ILLink.CodeFixProvider
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\illink.codefixprovider.dll
+++ILLink.RoslynAnalyzer
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\illink.roslynanalyzer.dll
+++Blazored.FluentValidation (2.0.3)
+i:{50467877-7952-476b-be4f-65266559be2a}:>2689
+++Microsoft.AspNetCore.Components.WebAssembly (6.0.5)
+i:{50467877-7952-476b-be4f-65266559be2a}:>2691
+++Microsoft.AspNetCore.Components.WebAssembly.DevServer (6.0.5)
+i:{50467877-7952-476b-be4f-65266559be2a}:>2695
+++Radzen.Blazor (4.1.14)
+++bootstrap
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\bootstrap\
+++open-iconic
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\
+++app.css
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\app.css
+++bootstrap.min.css
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\bootstrap\bootstrap.min.css
+++font
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\
+++FONT-LICENSE
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font-license
+++ICON-LICENSE
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\icon-license
+++README.md
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\readme.md
+++bootstrap.min.css.map
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\bootstrap\bootstrap.min.css.map
+++fonts
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\fonts\
+++open-iconic-bootstrap.min.css
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css
+++open-iconic.eot
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.eot
+++open-iconic.otf
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.otf
+++open-iconic.svg
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.svg
+++open-iconic.ttf
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf
+++open-iconic.woff
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.woff
+++Radzen.Blazor (4.1.1)
+i:{50467877-7952-476b-be4f-65266559be2a}:>2725
+++FormularioEditarMeta.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\metas\formularioeditarmeta.razor
+++NewFolder
+++Actividades
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\actividades\
+++LstActividades.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\actividades\lstactividades.razor
+++ActividadDTO.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\dto\actividaddto.cs
+++ActividadesDA.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\da\actividadesda.cs
+++IActividadesDA.cs
+++IActividadesDAL.cs
+i:{87fd2be9-048f-42a6-b510-923289582463}:c:\users\lenovo\source\repos\blazormetas\blazormetas\shared\ida\iactividadesdal.cs
+++ActividadController.cs
+i:{312c8f75-183f-4d16-8be4-cade2636c082}:c:\users\lenovo\source\repos\blazormetas\blazormetas\server\controllers\actividadcontroller.cs
+++FormularioCrearActividad.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\actividades\formulariocrearactividad.razor
+++FormularioEditarActividad.razor
+i:{50467877-7952-476b-be4f-65266559be2a}:c:\users\lenovo\source\repos\blazormetas\blazormetas\client\shared\actividades\formularioeditaractividad.razor

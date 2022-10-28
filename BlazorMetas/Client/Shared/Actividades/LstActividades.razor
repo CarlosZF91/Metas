@@ -1,0 +1,198 @@
+﻿@using BlazorMetas.Shared.DTO
+@inject DialogService DialogService
+@inject HttpClient Http
+
+<div class="row rz-background-color-success-darker rz-color-white">
+    <h5>Configurar plan de compensación</h5>
+</div>
+
+
+<div class="row rz-border-color-success-dark">
+
+    <div style="margin-top:5%">
+
+        <RadzenButton Click=@(args => NuevaActividad()) Text="Agregar tarea" Icon="add_circle_outline" class="rz-background-color-success-darker" />
+
+
+
+        @if (actividades != null && actividades.Where(x => x.Seleccionada == true && x.Concluida == false).Any())
+        {
+            <RadzenButton Click=@(args => Completar()) Text="Completar tarea" Icon="check_circle" ButtonStyle="ButtonStyle.Success" />
+        }
+
+        @if (actividades != null && actividades.Where(x => x.Seleccionada == true).Any())
+        {
+            <RadzenButton Click=@(args => Eliminar()) Text="Eliminar" Icon="delete_forever" ButtonStyle="ButtonStyle.Danger" />
+
+        }
+
+    </div>
+
+
+
+
+    <RadzenDataGrid AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="5" AllowPaging="true" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true"
+                    Data="@actividades" TItem="ActividadDTO" LogicalFilterOperator="LogicalFilterOperator.Or">
+        <Columns>
+
+
+
+            <RadzenDataGridColumn TItem="ActividadDTO" Property="Seleccionada" Title="Seleccionada">
+                <Template Context="actividad">
+                    <RadzenCheckBox @bind-Value=@actividad.Seleccionada></RadzenCheckBox>
+                </Template>
+            </RadzenDataGridColumn>
+
+            <RadzenDataGridColumn TItem="ActividadDTO" Property="Importante" Title="Destacada">
+                <Template Context="actividad">
+
+
+                    @if (@actividad.Importante)
+                    {
+
+
+                        <RadzenIcon Icon="star" class="rz-color-warning" @onclick=@(args => Destacar(actividad.Id))>
+
+                        </RadzenIcon>
+
+                    }
+                    else
+                    {
+
+                        <RadzenIcon Icon="star" class="rz-color-base-400" @onclick=@(args => Destacar(actividad.Id))>
+
+                        </RadzenIcon>
+                    }
+
+                </Template>
+
+            </RadzenDataGridColumn>
+
+
+            <RadzenDataGridColumn TItem="ActividadDTO" Property="Nombre" Title="Nombre" />
+            <RadzenDataGridColumn TItem="ActividadDTO" Property="FechaCreacion" Title="Fecha de creación" />
+
+
+            <RadzenDataGridColumn TItem="ActividadDTO" Property="Concluida" Title="Estado">
+
+                <Template Context="actividad">
+                    @if (@actividad.Concluida)
+                    {
+                        <RadzenText class=" --rz-success-lighter  rz-color-success">Completada</RadzenText>
+
+                    }
+                    else
+                    {
+                        <RadzenText class="rz-color-base-700">Abierta</RadzenText>
+                    }
+                </Template>
+
+            </RadzenDataGridColumn>
+
+            <RadzenDataGridColumn TItem="ActividadDTO" Property="Id" Title="Editar">
+
+                <Template Context="actividad">
+                    <RadzenIcon @onclick=@(args => EditarActividad(actividad.Id)) Icon="edit" />
+                </Template>
+
+            </RadzenDataGridColumn>
+
+
+
+        </Columns>
+    </RadzenDataGrid>
+</div>
+@code {
+
+    [Parameter] public string idMeta { get; set; }
+    [Parameter] public EventCallback actualizarListadoMetas { set; get; }
+
+    List<ActividadDTO> actividades { set; get; }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        actividades = await Http.GetFromJsonAsync<List<ActividadDTO>>("/api/Actividad/ObtenerActividadesPorMeta?id=" + idMeta);
+
+    }
+
+    public async Task NuevaActividad()
+    {
+        await DialogService.OpenAsync("Crear tarea", ds =>
+    @<FormularioCrearActividad idMeta=@idMeta actualizarListado=ActualizarListado></FormularioCrearActividad>, new DialogOptions() { Width = "40%", Height = "30%", CloseDialogOnOverlayClick = true }
+    );
+
+
+
+    }
+
+    public async Task EditarActividad(string id)
+    {
+
+
+
+        await DialogService.OpenAsync("Editar tarea", ds =>
+    @<FormularioEditarActividad actualizarListado=ActualizarListado id=@id></FormularioEditarActividad>
+    , new DialogOptions() { Width = "40%", Height = "30%", CloseDialogOnOverlayClick = true }
+    );
+
+
+
+    }
+    public async void Eliminar()
+    {
+        var actividadesACompletar = actividades.Where(x => x.Seleccionada == true).Select(x => x.Id).ToList();
+
+
+        var resultadoConfirmacion = await DialogService.Confirm("¿Está seguro? Que desea eliminar el elemento", "MyTitle", new ConfirmOptions() { OkButtonText = "Si", CancelButtonText = "No" });
+        bool confirmacion = resultadoConfirmacion ?? false;
+
+
+        if (confirmacion)
+        {
+            var resultado = Http.PostAsJsonAsync<List<string>>("api/Actividad/Eliminar", actividadesACompletar);
+            var respuesta = await resultado.Result.Content.ReadFromJsonAsync<RespuestaDTO>() ?? new RespuestaDTO();
+
+            if (respuesta.Tipo.ToString() == "Exitoso")
+            {
+                await actualizarListadoMetas.InvokeAsync();
+                ActualizarListado();
+            }
+        }
+    }
+
+    public async void Completar()
+    {
+        var actividadesACompletar = actividades.Where(x => x.Seleccionada == true && x.Concluida == false).Select(x => x.Id).ToList();
+
+
+        var resultado = await Http.PostAsJsonAsync<List<string>>("api/Actividad/Concluir", actividadesACompletar);
+        var respuesta = await resultado.Content.ReadFromJsonAsync<RespuestaDTO>() ?? new RespuestaDTO();
+
+        if (respuesta.Tipo.ToString() == "Exitoso"){
+            await actualizarListadoMetas.InvokeAsync();
+            ActualizarListado();
+        }
+    }
+
+    public async void Destacar(string id)
+    {
+
+        
+       var resultado =await Http.GetAsync("api/Actividad/Destacar?id="+id);
+         var respuesta = await resultado.Content.ReadFromJsonAsync<RespuestaDTO>()??new RespuestaDTO();
+
+        if(respuesta.Tipo.ToString()=="Exitoso"){
+            ActualizarListado();
+        }
+
+    }
+
+    public async void ActualizarListado()
+    {
+        actividades = await Http.GetFromJsonAsync<List<ActividadDTO>>("/api/Actividad/ObtenerActividadesPorMeta?id=" + idMeta);
+
+        StateHasChanged();
+    }
+
+}

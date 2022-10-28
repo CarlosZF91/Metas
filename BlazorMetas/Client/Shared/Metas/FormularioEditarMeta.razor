@@ -1,0 +1,41 @@
+﻿@inject DialogService DialogService
+@using BlazorMetas.Shared.DTO
+@inject HttpClient Http
+
+
+@if (MetaDTO != null)
+{
+    <Formulario metaDTO="MetaDTO" enviarFormulario="Editar">
+
+    </Formulario>
+}
+@code {
+
+    [Parameter] public string id { get; set; }
+    public MetaDTO MetaDTO { get; set; } = new MetaDTO();
+
+    [Parameter] public EventCallback actualizarListado { set; get; }
+    protected override async Task OnInitializedAsync()
+    {
+        MetaDTO = await Http.GetFromJsonAsync<MetaDTO>("api/Meta/ObtenerMeta?id=" + id);
+
+    }
+    public async Task Editar()
+    {
+        var resultado = await Http.PutAsJsonAsync<MetaDTO>("api/Meta/Editar", MetaDTO);
+        var respuesta = await resultado.Content.ReadFromJsonAsync<RespuestaDTO>() ?? new RespuestaDTO();
+
+        if (respuesta.Tipo.ToString() == "Exitoso")
+        {
+
+            DialogService.Close();
+            await actualizarListado.InvokeAsync();
+        }
+    }
+
+
+
+
+
+}
+

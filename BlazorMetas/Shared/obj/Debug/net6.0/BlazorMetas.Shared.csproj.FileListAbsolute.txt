@@ -1,0 +1,14 @@
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\bin\Debug\net6.0\BlazorMetas.Shared.deps.json
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\bin\Debug\net6.0\BlazorMetas.Shared.dll
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\bin\Debug\net6.0\BlazorMetas.Shared.pdb
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\BlazorMetas.Shared.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\BlazorMetas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\BlazorMetas.Shared.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\BlazorMetas.Shared.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\BlazorMetas.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\BlazorMetas.Shared.dll
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\refint\BlazorMetas.Shared.dll
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\BlazorMetas.Shared.pdb
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\ref\BlazorMetas.Shared.dll
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\bin\Debug\net6.0\BlazorMetas.Shared.runtimeconfig.json
+C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Shared\obj\Debug\net6.0\BlazorMetas.Shared.genruntimeconfig.cache

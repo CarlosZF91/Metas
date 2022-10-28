@@ -1,0 +1,8 @@
+abrir la consola de administrador de paquetes
+
+colocarse en el proyecto BlazorMetas.Shared
+
+ejecutar los comandos
+
+add-migration
+update-database

@@ -1,0 +1,33 @@
+﻿@using BlazorMetas.Shared.DTO
+@inject DialogService DialogService
+@using BlazorMetas.Shared.DTO
+@inject HttpClient Http
+
+
+<Formulario enviarFormulario="Crear" actividadDTO="actividadDTO"></Formulario>
+
+
+@code {
+
+    [Parameter, EditorRequired] public string idMeta { get; set; }
+    [Parameter] public EventCallback actualizarListado { get; set; }
+
+    public ActividadDTO actividadDTO { get; set; } = new ActividadDTO();
+
+    public async Task Crear()
+    {
+        actividadDTO.MetaId = idMeta;
+        actividadDTO.Id="1";
+        var resultado = await Http.PostAsJsonAsync<ActividadDTO>("api/Actividad/Crear", actividadDTO);
+        var respuesta = await resultado.Content.ReadFromJsonAsync<RespuestaDTO>() ?? new RespuestaDTO();
+
+        if (respuesta.Tipo.ToString() == "Exitoso")
+        {
+            DialogService.Close();
+            await actualizarListado.InvokeAsync();
+        }
+
+    }
+
+
+}

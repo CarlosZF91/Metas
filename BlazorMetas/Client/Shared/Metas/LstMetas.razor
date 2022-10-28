@@ -1,0 +1,135 @@
+﻿@using BlazorMetas.Shared.DTO
+@using BlazorMetas.Shared.Persistenacia
+@inject DialogService DialogService
+@inject HttpClient Http
+
+
+
+<RadzenButton Click=@(args => NuevaMeta()) Text="Nueva meta" Icon="add_circle_outline" class="rz-background-color-success-darker" />
+
+@if (metas != null)
+{
+
+    @foreach (var meta in metas)
+    {
+
+        string seleccionada = meta.Id == idMetaSeleccionada ?"seleccionada":"";
+        <div class="row rz-background-color-base-200 rz-border-color-base-400 @seleccionada tarjetaMeta" @onclick=@(args =>MetaSeleccionada(meta.Id))>
+                <div class="row">
+                    <div class="col-9">
+                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">@meta.Nombre</RadzenText>
+                    </div>
+
+                    <div class="col-1">
+                        <RadzenIcon @onclick=@(args => EditarMeta(meta.Id)) Icon="edit" />
+                    </div>
+                    <div class="col-1">
+                    <RadzenIcon @onclick=@(args => Eliminar(meta.Id)) Icon="delete_forever" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <span>Fecha de creación: @meta.FechaCreacion</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <span>@meta.actividadesConcluidas.ToString()/@meta.totalActividades.ToString()</span>
+                    </div>
+                    <div class="col-4" style="text-align:right;"><b>@meta.porcentajeAvance.ToString()%</b></div>
+
+                </div>
+                 
+                <div class="row">
+                    <div class="col-12">
+                        <RadzenProgressBar @bind-Value="@meta.porcentajeAvance" />
+                    </div>
+                </div>
+
+                 
+            </div> 
+    }
+}
+else
+{
+    <span>Obteniendo metas...</span>
+}
+
+
+@code {
+
+    [Parameter] public EventCallback<string> mostrarActividadesMeta { set; get; }
+    [Parameter] public string idMetaSeleccionada { set; get; }
+    [Parameter] public EventCallback<string> metaEliminada { set; get; }
+
+    public List<MetaDTO> metas { set; get; }
+    protected async override Task OnInitializedAsync()
+    {
+        metas = await Http.GetFromJsonAsync<List<MetaDTO>>("/api/Meta/GetMetas");
+    }
+
+    public async Task EditarMeta(string id)
+    { 
+        
+        
+        await DialogService.OpenAsync("Editar meta",ds=>
+    @<FormularioEditarMeta actualizarListado=ActualizarListado id=@id></FormularioEditarMeta>
+    , new DialogOptions() { Width = "40%", Height = "30%", CloseDialogOnOverlayClick = true }
+        );
+
+
+
+    }
+    public async void Eliminar(string id)
+    {
+
+        var resultadoConfirmacion = await DialogService.Confirm("¿Está seguro? Que desea eliminar el elemento", "Confirmar eliminación", new ConfirmOptions() { OkButtonText = "Si", CancelButtonText = "No" });
+        bool confirmacion = resultadoConfirmacion ?? false;
+
+
+        if (confirmacion)
+        {
+
+            var resultado = Http.DeleteAsync("api/Meta/Eliminar?id=" + id);
+
+
+            var respuesta = await resultado.Result.Content.ReadFromJsonAsync<RespuestaDTO>() ?? new RespuestaDTO();
+
+            if (respuesta.Tipo.ToString() == "Exitoso")
+            {
+                await ActualizarListado();
+                await metaEliminada.InvokeAsync(id);
+
+            }
+
+        }
+    }
+
+
+    public async Task NuevaMeta()
+    {
+
+          await DialogService.OpenAsync("Crear meta",ds=>
+    @<FomularioCrearMeta actualizarListado=ActualizarListado></FomularioCrearMeta>, new DialogOptions() { Width = "40%", Height = "30%", CloseDialogOnOverlayClick = true }
+        );
+
+       
+     
+
+    }
+
+    public async Task MetaSeleccionada(string id)
+    {
+        await mostrarActividadesMeta.InvokeAsync(id);
+
+    }
+
+    public async Task<bool>ActualizarListado(){
+
+        metas = await Http.GetFromJsonAsync<List<MetaDTO>>("/api/Meta/GetMetas");
+        StateHasChanged();
+        return true;
+    }
+
+}

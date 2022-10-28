@@ -1,0 +1,31 @@
+﻿@using BlazorMetas.Shared.DTO
+@inject DialogService DialogService
+<EditForm Model=metaDTO  OnValidSubmit="enviarFormulario">
+   <FluentValidationValidator/>
+   <div class="form-group">
+        <label>Nombre:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@metaDTO.Nombre" />
+           <ValidationMessage For="() => metaDTO.Nombre" />
+           <span> </span>
+        </div>
+    </div>
+  
+
+     <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
+        <RadzenButton ButtonType="ButtonType.Submit" Icon="save" Text="Guardar" class="rz-background-color-success-darker" />
+                <RadzenButton ButtonStyle="ButtonStyle.Light" Icon="cancel" style="display: inline-block; margin-left: 10px;" Text="Cancelar" Click="@Cancel" />
+            </div>
+</EditForm>
+
+@code {
+    [Parameter] public MetaDTO metaDTO{ set; get; }
+    [Parameter] public EventCallback enviarFormulario{ set; get; }
+
+
+    void Cancel()
+    {
+        Console.WriteLine("modal");
+        DialogService.Close(false);
+    }
+}

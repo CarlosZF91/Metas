@@ -1,0 +1,28 @@
+﻿@using BlazorMetas.Shared.DTO
+@inject DialogService DialogService
+@inject HttpClient Http
+
+<Formulario metaDTO="Meta" enviarFormulario="Crear">
+
+</Formulario>
+
+@code {
+    public MetaDTO Meta { get; set; } = new MetaDTO();
+    [Parameter] public EventCallback actualizarListado { set; get; }
+    public async Task Crear()
+    {
+        Meta.Id = "1";
+        var resultado = await Http.PostAsJsonAsync<MetaDTO>("api/Meta/Crear", Meta);
+         var respuesta = await resultado.Content.ReadFromJsonAsync<RespuestaDTO>()??new RespuestaDTO();
+
+        if(respuesta.Tipo.ToString()=="Exitoso"){
+          
+            DialogService.Close();
+            await actualizarListado.InvokeAsync();
+        }
+
+    }
+
+
+}
+

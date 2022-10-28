@@ -1,0 +1,48 @@
+﻿@page "/"
+<div class="row">
+    <div class="col-4" @key=idComponenteMetas style="border: #347736 solid 1px;
+    height: 90vh;
+    overflow-y: auto;" >
+        <BlazorMetas.Client.Shared.Metas.LstMetas mostrarActividadesMeta="MostrarActividadesMeta" idMetaSeleccionada=@idMetaSeleccionada metaEliminada=MetaEliminada></BlazorMetas.Client.Shared.Metas.LstMetas>
+    </div>
+
+    <div class="col-8" @key=idMetaSeleccionada>
+
+        @if (metaSeleccionada)
+        {
+            <BlazorMetas.Client.Shared.Actividades.LstActividades idMeta="@idMetaSeleccionada" actualizarListadoMetas="actualizarListadoMetas" ></BlazorMetas.Client.Shared.Actividades.LstActividades>
+
+
+        }
+    </div>
+</div>
+@code {
+    public string idMetaSeleccionada { get; set; }
+    public bool metaSeleccionada { get; set; }
+    public string idComponenteTareas { set; get; }
+    public string idComponenteMetas { set; get; }
+
+    public void MostrarActividadesMeta(string id)
+    {
+        
+        idMetaSeleccionada = id;
+        metaSeleccionada = true;
+    }
+
+    public  void actualizarListadoMetas(){
+         
+        idComponenteMetas = Guid.NewGuid().ToString();
+        StateHasChanged();
+
+        
+    }
+
+    public void MetaEliminada(string id){
+
+        @if (idMetaSeleccionada == id)
+        {
+            metaSeleccionada = false;
+ StateHasChanged();
+        }
+    }
+}

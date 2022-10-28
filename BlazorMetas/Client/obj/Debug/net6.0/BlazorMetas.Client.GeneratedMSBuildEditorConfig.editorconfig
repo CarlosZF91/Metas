@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = BlazorMetas.Client
+build_property.RootNamespace = BlazorMetas.Client
+build_property.ProjectDir = C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Lenovo\source\repos\BlazorMetas\BlazorMetas\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/Actividades/Formulario.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFjdGl2aWRhZGVzXEZvcm11bGFyaW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/Actividades/FormularioCrearActividad.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFjdGl2aWRhZGVzXEZvcm11bGFyaW9DcmVhckFjdGl2aWRhZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/Actividades/FormularioEditarActividad.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFjdGl2aWRhZGVzXEZvcm11bGFyaW9FZGl0YXJBY3RpdmlkYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/Actividades/LstActividades.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFjdGl2aWRhZGVzXExzdEFjdGl2aWRhZGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/Metas/FomularioCrearMeta.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1ldGFzXEZvbXVsYXJpb0NyZWFyTWV0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/Metas/Formulario.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1ldGFzXEZvcm11bGFyaW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/Metas/FormularioEditarMeta.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1ldGFzXEZvcm11bGFyaW9FZGl0YXJNZXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/Metas/LstMetas.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1ldGFzXExzdE1ldGFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-febrjuu2jz
+
+[C:/Users/Lenovo/source/repos/BlazorMetas/BlazorMetas/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8xdbuom2ki
